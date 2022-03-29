@@ -1,0 +1,133 @@
+.traveles {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 19.3rem;
+  overflow: hidden;
+  position: absolute;
+  display: initial;
+  z-index: 1001;
+  opacity: 1;
+  animation-name: animation-div;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+}
+
+.calendar-custom {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: auto;
+  overflow: hidden;
+  position: absolute;
+  display: initial;
+  z-index: 1001;
+  opacity: 1;
+  animation-name: animation-div;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+}
+
+.btn-custom {
+  color: #495057 !important;
+  width: 8.3rem !important;
+  display: inline-flex !important;
+  margin-bottom: 1rem !important;
+}
+
+.btn-custom-search{
+  background: linear-gradient(135deg,#ff690f 0%,#e8381b 100%) !important;
+}
+
+.bc {
+  background-color: #f0f3f5;
+  transition: background-color 0.3s linear;
+}
+
+.color-icon {
+  color: #aaaaaa !important;
+  width: fit-content !important;
+  display: flex !important;
+}
+
+.date{
+  width: 48% !important;
+  cursor: pointer;
+}
+
+.to {
+    transform: rotate(180deg);
+}
+
+.label-custom {
+    display: inline;
+    font-size: 1.1rem;
+    margin-left: 0.2rem;
+}
+
+.date:hover{
+  background-color: #b3b6b8;
+}
+
+@media only screen and (max-width: 680px){
+  .h1-none{
+    display: none;
+  }
+  .toolbar {
+    margin-top: 1rem;
+  }
+
+  .custom-span {
+    width: 0 !important;
+  }
+}
+
+.date-custom {
+  margin-right: 0.5rem !important;
+}
+
+@media only screen and (max-width: 765px) {
+  .date-custom {
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .div-int {
+    display: flex;
+    position: absolute;
+    right: 2.6rem;
+    top: 11.8rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .div-int {
+    display: flex;
+    position: absolute;
+    right: 2.6rem;
+    top: 6.2rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .div-int {
+    display: flex;
+    position: absolute;
+    right: 2.6rem;
+    top: 9.3rem;
+  }
+}
+
+@keyframes animation-div {
+  0%{
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
